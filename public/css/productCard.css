@@ -29,6 +29,7 @@
   transition: 0.4s ease-out;
   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
   border-color: black;
+  margin: 50px;
 }
 .card:hover {
   transform: translateY(10px);
@@ -100,4 +101,5 @@
 h1.h1-card {
   font-size: 24px;
   color: #ffa500;
+  font-weight: bold;
 }
