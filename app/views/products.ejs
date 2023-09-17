@@ -22,7 +22,7 @@
     <title>Our Products</title>
   </head>
   <body>
-    <%- include('./partial/navbar') %> <%- include('./partial/languageButton2')
+    <%- include('./partial/navbar') %> <%- include('./partial/languageButton')
     %>
     <!--Pre loader-->
     <div class="lds-ring" id="preloader"></div>
@@ -113,7 +113,7 @@
         data-aos-duration="2000"
       >
         <div class="content-2">
-          <video width="500" controls class="widthMatch">
+          <video width="500" controls class="widthMatch" preload="none">
             <source src="/video/productVideo3.mp4" type="video/mp4" />
             Your browser does not support HTML video.
           </video>
@@ -229,8 +229,8 @@
           />
           <div class="content">
             <p class="desc-1" data-id="desc-1">
-              <span class="highlight-text"
-                >Military-grade Industrial Plastic Bags</span
+              <span class="highlight-text"></span>
+                Durable Industrial Plastic Bags</span
               ><br />
               Versatile Industrial Solution: Ideal for a Wide Range of
               Applications including Plastic Molding, Painting, and Asphalt
