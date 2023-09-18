@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./partial/header') %>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/machinery.css" />
+    <link rel="stylesheet" href="css/products.css" />
+    <link rel="stylesheet" href="css/preloader.css" />
+    <link rel="stylesheet" href="css/productCard.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <title>Machinery</title>
+    <style>
+      @media (max-width: 1350px) {
+        .content {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          flex: 1;
+          min-width: 100%;
+          justify-content: center;
+          text-align: center;
+          align-items: center;
+          padding-top: 50px;
+        }
+
+        ol.list-materials {
+          padding-right: 40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <%- include('./partial/navbar') %> <%- include('./partial/languageButton')
+    %>
+    <!--Pre loader-->
+    <div class="lds-ring" id="preloader"></div>
+    <!-- Start of carousel-->
+    <div
+      id="carouselExampleControls"
+      class="carousel slide carousel-extend"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img
+            src="/image/machine1.png"
+            class="d-block w-100"
+            alt="..."
+            style="max-height: 93vh"
+          />
+          <div class="carousel-caption d-md-block">
+            <div
+              class="title"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+            >
+              <h1 class="product">
+                Explore Our <span class="italicize"> High End </span> Machines
+                <br />
+                <span class="italicize" style="font-size: small"
+                  >Current Slide: Plastic Rolling Component</span
+                >
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img
+            src="/image/slide2machine.png"
+            class="d-block w-100"
+            alt="..."
+            style="max-height: 91vh"
+          />
+          <div class="carousel-caption d-md-block">
+            <div class="title">
+              <h1 class="product">
+                Explore Our
+                <span class="italicize"> High Quality </span> Machines <br />
+                <span class="italicize" style="font-size: small"
+                  >Current Slide: Blowing Component</span
+                >
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img
+            src="/image/slide3machine.png"
+            class="d-block w-100"
+            alt="..."
+            style="max-height: 93vh"
+          />
+
+          <div class="carousel-caption d-md-block">
+            <div class="title">
+              <h1 class="product">
+                Explore Our <span class="italicize">Imported</span> Machines
+                <br />
+                <span class="italicize" style="font-size: small">
+                  Current Slide: Cutting and Preparing Stage</span
+                >
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Section 2 Start-->
+    <div class="section-2">
+      <div
+        class="product-card"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="2000"
+      >
+        <div class="content-2">
+          <video width="500" controls class="widthMatch" preload="none">
+            <source src="/video/gsb.mp4" type="video/mp4" alt="videoMachinery" />
+            Your browser does not support HTML video.
+          </video>
+          <div class="content">
+            <p class="desc-1" data-id="desc-1">
+              <span class="highlight-text">High-speed Film Blowing Machine</span
+              ><br />
+              With its high-quality alloy steel extruder cylinder and
+              precision-nitrified screw rods, our machine exhibits exceptional
+              resistance to corrosion when processing solid materials. The
+              specially engineered screw augments the overall production
+              capacity in plastic manufacturing, delivering consistent quality.
+              <br />
+              This machine excels in the primary function of producing plastic
+              films, including Low-Density Polyethylene (LDPE), High-Density
+              Polyethylene (HDPE), and Linear Low-Density Polyethylene (LLDPE).
+              <br />
+              These plastic films find ubiquitous applications in everyday
+              scenarios, serving as essential materials for the production of
+              packaging bags, clothing, garbage bags, and vest bags.
+              <br />
+              <br />
+              Optional Equipment:
+            </p>
+
+            <ul class="list-materials">
+              <li>Automatic Suction Device</li>
+              <li>Rotary Die Device</li>
+              <li>Thickness Auto Controller</li>
+              <li>Film Width Auto Controller</li>
+            </ul>
+
+            <a
+              href="https://www.gap-polymers.com/en/blog-post/polyethylene-plastic#:~:text=HDPE%20is%20used%20in%20strong,packaging%20materials%20like%20plastic%20wraps."
+              target="_blank"
+            >
+              <button class="cta-button">Machine Properties</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Section 3 Start-->
+    <div class="section-3" id="par1">
+      <div class="machine-content" data-aos="fade-up" data-aos-duration="2000">
+        <img
+          src="/image/mesin1.png"
+          alt=""
+          style="max-height: 500px"
+          class="img-fluid img-2"
+        />
+        <div class="text-machine">
+          <p class="desc-machine" data-id="desc-machine">
+            <span class="highlight-text"
+              >Double-layer Co-Extrusion Rotary Die Film Blowing Machine
+              Set</span
+            ><br />
+            Used for blowing the plastic laminated film of low density
+            polyethylene (LDPE), high density polyethylene (HDPE) and linear low
+            density polyethylene (LLDPE) etc. These are widely used for packing
+            liquids, printed bas, etc.
+
+            <br />
+            <br />
+            Characteristics:
+          </p>
+          <ol class="list-materials">
+            <li>
+              Double-layer Co-Extrusion laminated film can prolong the length of
+              preservation of liquid packages
+            </li>
+            <li>
+              The cylinder and the screw stem of the extruder are made of high
+              quality alloy steel with optimum hardness and durable service
+              after precision finishing and nitrogen treatment.
+            </li>
+            <li>
+              The auxilary machine has a platform working table to facilitate
+              feasible operation, and is equipped with bubble stabilizing ring.
+            </li>
+            <li>
+              Double-rolling and double-cutting coiling unit adopts torque motor
+              to maintain proper tensions and even rolling, also to simplify
+              rollchancing.
+            </li>
+          </ol>
+          <a
+            href="https://drive.google.com/file/d/1f66GZrJ3Phwij2IB2pHLuEAiwlBkKCXR/view?usp=share_link"
+            target="_blank"
+          >
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-2" id="par2">
+      <div
+        class="product-card"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="2000"
+      >
+        <div class="content-2">
+          <img
+            src="/image/machine2.png"
+            alt=""
+            style="max-height: 500px"
+            class="img-fluid img-2"
+          />
+          <div class="content">
+            <p class="desc-1" data-id="desc-1">
+              <span class="highlight-text"
+                >Three-layer Co-extrusion Film Blowing Machine (IBC
+                System)</span
+              >
+              HT-G-1700
+              <br />
+            </p>
+            <a
+              href="https://drive.google.com/file/d/1f66GZrJ3Phwij2IB2pHLuEAiwlBkKCXR/view?usp=share_link"
+              target="_blank"
+            >
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-3" id="par3">
+      <div class="machine-content" data-aos="fade-up" data-aos-duration="2000">
+        <img
+          src="/image/singleMachine2.png"
+          alt=""
+          style="max-height: 500px"
+          class="img-fluid img-2"
+        />
+        <div class="text-machine">
+          <p class="desc-machine" data-id="desc-machine">
+            <span class="highlight-text"
+              >Single Screw Double Diehead Film Blowing Machine</span
+            ><br />
+            Optional Equipment:
+          </p>
+          <ol class="list-materials">
+            <li>Automatic Suction Machine</li>
+            <li>Corona Processor</li>
+            <li>Rotary Die Head</li>
+            <li>Automatic Windler</li>
+            <li>Mick Weight System</li>
+            <li>Fast Screen Charger</li>
+          </ol>
+          <a
+            href="https://drive.google.com/file/d/1f66GZrJ3Phwij2IB2pHLuEAiwlBkKCXR/view?usp=share_link"
+            target="_blank"
+          >
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-2" id="par2">
+      <div
+        class="product-card"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="2000"
+      >
+        <div class="content-2">
+          <img
+            src="/image/biodegration.png"
+            alt=""
+            style="max-height: 500px"
+            class="img-fluid img-2"
+          />
+          <div class="content">
+            <p class="desc-1" data-id="desc-1">
+              <span class="highlight-text"
+                >Biodegration Film Blowing Machine</span
+              ><br />
+              Optional Equipment:
+            </p>
+            <ol class="list-materials">
+              <li>Micro Weight Controller</li>
+              <li>Auxiliary Feeder</li>
+              <li>Corona Treater</li>
+              <li>Fast Net Changer</li>
+              <li>Auto Windler</li>
+            </ol>
+            <a
+              href="https://drive.google.com/file/d/1f66GZrJ3Phwij2IB2pHLuEAiwlBkKCXR/view?usp=share_link"
+              target="_blank"
+            >
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-3" id="par3">
+      <div class="machine-content" data-aos="fade-up" data-aos-duration="2000">
+        <img
+          src="/image/machine4_2.png"
+          alt=""
+          style="max-height: 500px"
+          class="img-fluid img-2"
+        />
+        <div class="text-machine">
+          <p class="desc-machine" data-id="desc-machine">
+            <span class="highlight-text"
+              >Film Blowing Machine With Flexo Priting</span
+            >
+            HT-G-II-45/60
+            <br />
+            The fuselage is a square steel chassis, drags electric motor taking
+            frequency conversion, friction to collect a book only going up and
+            down and so on. Be fit to puff height low pressure polyethylene
+            industry film, farm-oriented mulch film. Continue printing the
+            various plastic film spread and despire the leather package
+            products. Shan two-sided printing once to be completed 360 degree of
+            reaister sets. Not affectina the film elonaatina by accurately can
+            make to print adjustment the image anytime arbritary limpid to color
+            exquisite.
+          </p>
+
+          <a
+            href="https://drive.google.com/file/d/1f66GZrJ3Phwij2IB2pHLuEAiwlBkKCXR/view?usp=share_link"
+            target="_blank"
+          >
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-2" id="par2">
+      <div
+        class="product-card"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="2000"
+      >
+        <div class="content-2">
+          <img
+            src="/image/biodegration.png"
+            alt=""
+            style="max-height: 500px"
+            class="img-fluid img-2"
+          />
+          <div class="content">
+            <p class="desc-1" data-id="desc-1">
+              <span class="highlight-text"
+                >PE Double Screw Colour Belt Film Blowing Machine</span
+              >
+              HTG-600/800
+              <br />
+              Optional Equipment :
+            </p>
+            <ol class="list-materials">
+              <li>Auto Loader</li>
+              <li>Embossing Roller</li>
+            </ol>
+            <a
+              href="https://drive.google.com/file/d/1f66GZrJ3Phwij2IB2pHLuEAiwlBkKCXR/view?usp=share_link"
+              target="_blank"
+            >
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-3" id="par3">
+      <div class="machine-content" data-aos="fade-up" data-aos-duration="2000">
+        <img
+          src="/image/rotugave.png"
+          alt=""
+          style="max-height: 500px"
+          class="img-fluid img-2"
+        />
+        <div class="text-machine">
+          <p class="desc-machine" data-id="desc-machine">
+            <span class="highlight-text"
+              >PE Film Blowing Machine With Rotogravure Printing</span
+            >
+            HT-G-II-50/55/65
+            <br />
+            Optional Equipment:
+          </p>
+
+          <ol class="list-materials">
+            <li>Auto Loader</li>
+            <li>Air Compressor</li>
+            <li>Special Die</li>
+            <li>Rotary Die Device</li>
+            <li>Double Sides Winder</li>
+          </ol>
+
+          <a
+            href="https://drive.google.com/file/d/1f66GZrJ3Phwij2IB2pHLuEAiwlBkKCXR/view?usp=share_link"
+            target="_blank"
+          >
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-2" id="par2">
+      <div
+        class="product-card"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="2000"
+      >
+        <div class="content-2">
+          <img
+            src="/image/rollingHeat.png"
+            alt=""
+            style="max-height: 500px"
+            class="img-fluid img-2"
+          />
+          <div class="content">
+            <p class="desc-1" data-id="desc-1">
+              <span class="highlight-text"
+                >Rolling Heat Sealing & Cool Cutting Bag Producing Machine</span
+              >
+              HTZ-600/700/800/1000
+              <br />
+            </p>
+            <a
+              href="https://drive.google.com/file/d/1f66GZrJ3Phwij2IB2pHLuEAiwlBkKCXR/view?usp=share_link"
+              target="_blank"
+            >
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-3" id="par3">
+      <div class="machine-content" data-aos="fade-up" data-aos-duration="2000">
+        <img
+          src="/image/rotugave.png"
+          alt=""
+          style="max-height: 500px"
+          class="img-fluid img-2"
+        />
+        <div class="text-machine">
+          <p class="desc-machine" data-id="desc-machine">
+            <span class="highlight-text"
+              >Double Channel Hot Sealing and Cold Cutting Bag Making Machine
+              (Automatic Finishing Frame)</span
+            >
+            HT-Z-450x2/600x2
+          </p>
+          
+          <a
+            href="https://drive.google.com/file/d/1f66GZrJ3Phwij2IB2pHLuEAiwlBkKCXR/view?usp=share_link"
+            target="_blank"
+          >
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-2" id="par2">
+      <div
+        class="product-card"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="2000"
+      >
+        <div class="content-2">
+          <img
+            src="/image/rollingHeat.png"
+            alt=""
+            style="max-height: 500px"
+            class="img-fluid img-2"
+          />
+          <div class="content">
+            <p class="desc-1" data-id="desc-1">
+              <span class="highlight-text"
+                >Automatic T-Shirt Bag Making Machine</span
+              >
+              HT-Z-500x2
+
+              <br />
+              <ol class="list-materials">
+                <li>
+                  This machine can produce original color and printed vest bag with
+                  HDPE, LDPE biodegradable material and simple film as raw material.
+                  Using computer programming control system, servo motor automatically
+                  fixed length, from the feeding, sealing, cutting, punching,
+                  conveyingone-time completion.
+                </li>
+                <li>
+                  The home-made servo motor control system and computer control, LPC
+                  LCD screen display with Panasonic photoelectric eye tracking
+                  control, easy to operate,can produce colorprinting bags.
+                </li>
+                <li>
+                  The main machine adopts the frequency converter to simulate the
+                  speed regulation and the automatic feeding system to makethe bag
+                  making stable and the sealing and cutting accurate. Automatic punch
+                  foldingdevice, conveyor belt feeding bag function.
+                </li>
+                <li>
+                  Blow-type discharge system, with the bag bottom integral design,
+                  bag neat, clamping punch location accurate
+                </li>
+                <li>
+                  The cutter adopts the electric current heating independently, the
+                  high precision temperature controller controls the temperature
+                  automatically, the operation is convenient, the temperature
+                  control is accurate.
+                </li>
+                <li>
+                  The whole machine adopts IC electronic circuit automatic control
+                  socket type design, which is easy to change, and has the function
+                  of no material,cut of material and stop up.
+                </li>
+                <li>
+                  With many years of leading technology in plastic machinery
+                  industry, we have made a breakthrough ni R&D, to create a new
+                  generation of high-speed bag-making machine, punch machine,
+                  welcome new and old customers to visit the trial machine.
+                </li>
+              </ol>
+            </p>
+            <a
+              href="https://drive.google.com/file/d/1f66GZrJ3Phwij2IB2pHLuEAiwlBkKCXR/view?usp=share_link"
+              target="_blank"
+            >
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Flash Cards Start-->
+    <div class="flashcard-2 img-fluid" style="background-color: #1f232c">
+      <div class="wrapper">
+        <div class="card">
+          <img src="/image/plasticCard1.png" />
+          <div class="info">
+            <h1 class="h1-card">Biodegration Film Blowing Machine</h1>
+            <p>
+              Lorem Ipsum is simply dummy text from the printing and typeseting
+              industry
+            </p>
+            <a href="#par1">
+              <button>Read More</button>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/image/plasticCor.png" />
+          <div class="info">
+            <h1 class="h1-card">Military-grade Industrial Plastic Bags</h1>
+            <p>
+              Lorem Ipsum is simply dummy text from the printing and typeseting
+              industry
+            </p>
+            <a href="#par2">
+              <button>Read More</button>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/image/plasticCarousel2.png" />
+          <div class="info">
+            <h1 class="h1-card">Multi-purpose Colored Plastic Bags</h1>
+            <p>
+              Lorem Ipsum is simply dummy text from the printing and typeseting
+              industry
+            </p>
+            <a href="#par3">
+              <button>Read More</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-3" id="par3">
+      <div class="machine-content" data-aos="fade-up" data-aos-duration="2000">
+        <img
+          src="/image/rotugave.png"
+          alt=""
+          style="max-height: 500px"
+          class="img-fluid img-2"
+        />
+        <div class="text-machine">
+          <p class="desc-machine" data-id="desc-machine">
+            <span class="highlight-text"
+              >PE Film Blowing Machine With Rotogravure Printing</span
+            >
+            HT-G-II-50/55/65
+            <br />
+            Optional Equipment:
+          </p>
+
+          <ol class="list-materials">
+            <li>Auto Loader</li>
+            <li>Air Compressor</li>
+            <li>Special Die</li>
+            <li>Rotary Die Device</li>
+            <li>Double Sides Winder</li>
+          </ol>
+
+          <a
+            href="https://drive.google.com/file/d/1f66GZrJ3Phwij2IB2pHLuEAiwlBkKCXR/view?usp=share_link"
+            target="_blank"
+          >
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleLanguage(language) {
+        // Add variables for more text translations from the element IDs
+        let description = document.getElementById("title-aboutus");
+        if (language === "Indonesian") {
+          description.innerHTML = "Tentang Kami"; // Add more lines for more text translations
+        } else {
+          description.innerHTML = "About Us";
+        }
+      }
+    </script>
+    <script src="javascript/preloader.js"></script>
+  </body>
+  <%- include('./partial/footer') %> <%- include('./partial/scriptFooter') %>
+</html>
